@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Hello</title> 
+		<style>
+			.a {
+				position: fixed;
+				color: blue;
+				background-color: red;
+				width: 450px;
+				height: 200px;
+				
+			}
+			.b.front {
+				position: absolute;
+				background-color: blue;
+				color: white;
+				width: 450px;
+				height: 200px;
+				top: 180px;
+				left: 140px;
+				z-index: 1;
+				font-size: 20px;
+			}
+			#dexin {
+				position: fixed;
+				background-color: orange;
+				width: 450px;
+				height: 200px;
+				top: 300px;
+				left: 180px;
+			}
+			#sev {
+				position: fixed;
+				background-color: black;
+				color: white;
+				width: 200px;
+				height: 200px;
+				top: 0;
+				right: 0;
+				font-size: 20px;
+			}
+			.kanach {
+				position: fixed;
+				background-color: green;
+				color: white;
+				width: 100%;
+				height: 100px;
+				bottom: 0;
+				font-size: 25px;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+		<div class="a"></div>
+		<div class="b front">Always on top of other boxes</div>
+		<div id="dexin"></div>
+		<div id="sev">Always on right top</div>
+		<div class="kanach">Always on bottom with 100% width</div>
+	</body>
+
+</html>
